@@ -8,6 +8,8 @@ class LinkedList:
         self.head = None
 
     def __str__(self):
+        if self.head == None:
+            return "No Data"
         print("_"*15,"Data printing","_"*15)
         temp = self.head
         stt = ""
@@ -27,7 +29,7 @@ class LinkedList:
 
     def deleteNode(self):
         if self.head == None:
-            print("List is Empty")
+            print("Stack is Empty")
         else:
             temp = self.head
             self.head = self.head.next
